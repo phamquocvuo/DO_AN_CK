@@ -1,0 +1,4 @@
+
+{
+  "DB_CONNECTION_DEV": "mongodb+srv://phamquocvuongtt19:phamquocvuongtt19@cluster0.2zqlgzp.mongodb.net/?retryWrites=true&w=majority"
+}
