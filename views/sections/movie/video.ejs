@@ -1,0 +1,35 @@
+<!-- details -->
+<section class="section details py-4" id="section-video">
+    <!-- details background -->
+    <div class="details__bg" data-bg="/img/home/home__bg.jpg"></div>
+    <!-- end details background -->
+    <!-- details content -->
+    <div class="container">
+        <div class="row">
+            <!-- content -->
+            <div class="col-12 col-xl-12">
+                <!-- player -->
+                <div id="player"></div>
+                <!-- end player -->
+                <iframe id="iframePlayer" allowfullscreen="allowfullscreen" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="col-12">
+                <!-- title -->
+                <h3 class="text-white py-2 card__title"><%-movie.title%></h3>
+                <!-- end title -->
+            </div>
+            
+            <!-- end content -->
+            <div class="col-12">
+                
+        </div>
+    </div>
+    <!-- end details content -->
+    <div id="loading" :class="{active : loading}">
+        <div class="content-loading">
+            <img src="/img/loading.svg" alt="loading-video">
+            <p class="text-white text-uppercase">Đang tải phim ...</p>
+        </div>
+    </div>
+</section>
+<!-- end details -->
