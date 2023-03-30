@@ -12,6 +12,9 @@ const RegionModel = require("../src/db/schema/RegionSchema");
 const config = require("../src/config");
 const common = require("../src/common");
 //Page trang chu
+router.get("/quamon", async (req, res, next) =>{
+  res.render("quamon");
+})
 router.get("/", async (req, res, next) => {
   //Phim moi
   const topMovies = MovieModel.getTopMovie(config.itemPerPage);
