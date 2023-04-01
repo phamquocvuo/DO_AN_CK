@@ -5,7 +5,7 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var session = require('express-session')
 var indexRouter = require("./routes/index");
-var adminRouter = require("./routes/beAdmin");
+var adminRouter = require("./routes/Admin");
 var serieRouter = require("./routes/series");
 var cloneRouter = require("./routes/clone");
 var app = express();
@@ -35,9 +35,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(requestIp.mw())
 app.use("/", indexRouter);
-app.use("/phim-bo", serieRouter);
-app.use("/be-admin", adminRouter);
-app.use("/clone", cloneRouter);
+app.use("/admin", adminRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
